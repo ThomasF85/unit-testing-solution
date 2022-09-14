@@ -34,7 +34,7 @@ const card3Toggled = { ...card3Original, bookmarked: true };
 
 const cards = [card1Original, card2Original, card3Original];
 
-test.skip("toggleBookmark returns an array with toggled bookmarked property for the correct card object", () => {
+test("toggleBookmark returns an array with toggled bookmarked property for the correct card object", () => {
   const cardsToggled1 = toggleBookmark(cards, card1Original.id);
   const cardsToggled2 = toggleBookmark(cards, card2Original.id);
   const cardsToggled3 = toggleBookmark(cards, card3Original.id);
