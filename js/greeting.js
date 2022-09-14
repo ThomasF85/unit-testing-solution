@@ -1,3 +1,11 @@
 function greet(name) {
-  return `Howdy ${name}`;
+  if (name === "Dalia") {
+    return "Howdy Boss!";
+  }
+  if (["Stefan", "Felix", "Thomas"].includes(name)) {
+    return "Howdy Coach!";
+  }
+  return `Howdy ${name}!`;
 }
+
+export { greet };

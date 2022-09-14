@@ -10,7 +10,7 @@ const testData = [
 ];
 
 test.each(testData)(
-  "returns correct teenager status",
+  "returns correct cubic volume",
   (length, width, depth, expectedVolume) => {
     const volume = cubicVolume(length, width, depth);
     expect(volume).toBe(expectedVolume);
